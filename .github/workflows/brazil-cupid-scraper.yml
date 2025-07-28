@@ -1,6 +1,8 @@
 name: Brazil Cupid Scraper
 
 on:
+  push:
+    branches: [ main ]
   schedule:
     # Ejecutar cada hora (minuto 0 de cada hora)
     - cron: '0 * * * *'
