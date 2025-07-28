@@ -44,8 +44,8 @@ jobs:
       run: mkdir -p screens
       
     - name: Run Brazil Cupid Scraper
-      run: timeout 25m node scraper.js || echo "Scraper completed or timed out"
-      timeout-minutes: 30
+      run: timeout 40m node scraper.js || echo "Scraper completed or timed out"
+      timeout-minutes: 45
       continue-on-error: true
       env:
         BRAZIL_CUPID_EMAIL: ${{ secrets.BRAZIL_CUPID_EMAIL }}
