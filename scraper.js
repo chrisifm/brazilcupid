@@ -498,27 +498,40 @@ class WebScraper {
                 }
             }
             
-            // Step 4: Always use initial.txt as primary URL
-            console.log('Step 4: Reading primary URL from initial.txt...');
-            const targetUrl = await this.readInitialFromFile();
+            // Step 4: Check if we're on the waiting/redirect page after login
+            console.log('Step 4: Checking post-login page status...');
+            const postLoginUrl = this.page.url();
+            console.log(`🔍 Post-login URL: ${postLoginUrl}`);
             
-            console.log(`🚀 Navigating to primary URL: ${targetUrl}`);
-            await this.navigateTo(targetUrl);
-            
-            // Step 5: Wait for page to fully load and stabilize after login verification
-            console.log('Step 5: Waiting for page to fully load and complete any verification processes...');
-            await this.safeTimeout(10000); // Extended wait for page stabilization after login
-            
-            // Check if page has redirected or changed
-            const currentUrl = this.page.url();
-            console.log(`🔍 Current page after wait: ${currentUrl}`);
-            
-            // If page changed, navigate back to target URL
-            if (!currentUrl.includes('results')) {
-                console.log('🔄 Page redirected, navigating back to target URL...');
-                await this.navigateTo(targetUrl);
+            // If we're on a waiting/redirect page (like logon_do.cfm), wait for auto-redirect
+            if (postLoginUrl.includes('logon_do.cfm') || postLoginUrl.includes('wait') || postLoginUrl.includes('redirect')) {
+                console.log('⏳ Detected waiting/redirect page - waiting for automatic redirect...');
+                
+                // Wait for navigation to complete (auto-redirect)
+                try {
+                    await this.page.waitForNavigation({ 
+                        waitUntil: 'domcontentloaded', 
+                        timeout: 30000 
+                    });
+                    console.log(`✅ Auto-redirect completed to: ${this.page.url()}`);
+                } catch (error) {
+                    console.log(`⚠️ Auto-redirect timeout, proceeding manually: ${error.message}`);
+                }
+                
+                // Additional wait for page stabilization
                 await this.safeTimeout(5000);
             }
+            
+            // Step 5: Navigate to target URL from initial.txt
+            console.log('Step 5: Reading target URL from initial.txt...');
+            const targetUrl = await this.readInitialFromFile();
+            
+            console.log(`🚀 Navigating to target URL: ${targetUrl}`);
+            await this.navigateTo(targetUrl);
+            
+            // Wait for page to fully load
+            console.log('⏳ Waiting for page to fully load...');
+            await this.safeTimeout(5000);
             
             console.log('Step 6: Starting cyclic heart clicking with pagination...');
             await this.safeTimeout(3000); // Additional wait for page stabilization
