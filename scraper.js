@@ -225,21 +225,6 @@ class WebScraper {
         }
     }
 
-    // Method to read search parameters from search.txt
-    async readSearchFromFile() {
-        try {
-            const searchContent = await fs.readFile('search.txt', 'utf8');
-            const searchQuery = searchContent.trim();
-            if (!searchQuery) {
-                throw new Error('Empty search.txt file');
-            }
-            console.log(`🔍 Found search parameters: ${searchQuery}`);
-            return searchQuery;
-        } catch (error) {
-            console.error('Error reading search.txt:', error.message);
-            throw new Error('search.txt file is required');
-        }
-    }
 
     // Method to attempt modal close (fast - assume it exists)
     async closeModalIfOpen() {
@@ -261,9 +246,9 @@ class WebScraper {
     async returnToSearchPageIfNeeded() {
         const isOnSearchPage = await this.checkIfOnSearchPage();
         if (!isOnSearchPage) {
-            console.log('Page changed - returning to search results...');
-            const searchQuery = await this.readSearchFromFile();
-            await this.navigateTo(`https://www.brazilcupid.com/es/results/${searchQuery}`);
+            console.log('Page changed - returning to initial URL...');
+            const initialUrl = await this.readInitialFromFile();
+            await this.navigateTo(initialUrl);
             await this.safeTimeout(3000); // Wait for page load
             return true;
         }
@@ -279,11 +264,11 @@ class WebScraper {
             const currentPage = parseInt(urlParams.get('pageno') || '1');
             const nextPage = currentPage + 1;
             
-            // Read search parameters from search.txt to preserve them
-            const searchQuery = await this.readSearchFromFile();
-            
-            // Build next page URL with preserved search parameters
-            const nextPageUrl = `https://www.brazilcupid.com/es/results/${searchQuery}&pageno=${nextPage}`;
+            // Get base URL from initial.txt and add page number
+            const initialUrl = await this.readInitialFromFile();
+            const baseUrl = new URL(initialUrl);
+            baseUrl.searchParams.set('pageno', nextPage);
+            const nextPageUrl = baseUrl.toString();
             
             // Check if siguiente button exists first
             const siguienteExists = await this.page.$('a[href*="pageno="]');
@@ -548,10 +533,9 @@ class WebScraper {
                         console.log(`Page loop detected! Consecutive loops: ${consecutiveLoops}`);
                         
                         if (consecutiveLoops >= 3) {
-                            console.log('🔄 Multiple page loops detected - restarting from page 1');
-                            const searchQuery = await this.readSearchFromFile();
-                            const resetUrl = `https://www.brazilcupid.com/es/results/${searchQuery}`;
-                            await this.navigateTo(resetUrl);
+                            console.log('🔄 Multiple page loops detected - restarting from initial URL');
+                            const initialUrl = await this.readInitialFromFile();
+                            await this.navigateTo(initialUrl);
                             consecutiveLoops = 0;
                             await this.safeTimeout(3000);
                             continue;
