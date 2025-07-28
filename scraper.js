@@ -525,6 +525,12 @@ class WebScraper {
                     console.log('⚠️ Still on logon_do page after 60 seconds, proceeding anyway...');
                 } else {
                     console.log(`✅ Page changed! New URL: ${currentUrl}`);
+                    console.log('⏳ Waiting additional 10 seconds for page to fully stabilize...');
+                    await this.safeTimeout(10000); // Wait 10 more seconds after change
+                    
+                    // Check final URL after stabilization
+                    const finalUrl = this.page.url();
+                    console.log(`🔍 Final URL after stabilization: ${finalUrl}`);
                 }
             }
             
