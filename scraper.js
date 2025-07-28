@@ -526,7 +526,7 @@ class WebScraper {
                 } else {
                     console.log(`✅ Page changed! New URL: ${currentUrl}`);
                     console.log('⏳ Waiting additional 10 seconds for page to fully stabilize...');
-                    await this.safeTimeout(10000); // Wait 10 more seconds after change
+                    await this.safeTimeout(1000); // Wait 10 more seconds after change
                     
                     // Check final URL after stabilization
                     const finalUrl = this.page.url();
@@ -552,18 +552,38 @@ class WebScraper {
                             await this.waitForSelector(emailSelector, 10000);
                             await this.waitForSelector(passwordSelector, 10000);
                             
-                            // Clear and re-enter credentials
+                            // Clear email field completely and re-enter credentials
+                            console.log('🧹 Clearing email field...');
                             await this.page.focus(emailSelector);
                             await this.page.keyboard.down('Control');
-                            await this.page.keyboard.press('a');
+                            await this.page.keyboard.press('a'); // Select all
                             await this.page.keyboard.up('Control');
+                            await this.page.keyboard.press('Delete'); // Delete selected content
+                            await this.page.evaluate((selector) => {
+                                const field = document.querySelector(selector);
+                                if (field) field.value = ''; // Clear programmatically
+                            }, emailSelector);
+                            await this.safeTimeout(100);
+                            
+                            console.log('📧 Typing email from scratch...');
                             await this.page.type(emailSelector, email, { delay: 15 });
                             
                             await this.safeTimeout(250);
+                            
+                            // Clear password field completely and re-enter credentials
+                            console.log('🧹 Clearing password field...');
                             await this.page.focus(passwordSelector);
                             await this.page.keyboard.down('Control');
-                            await this.page.keyboard.press('a');
+                            await this.page.keyboard.press('a'); // Select all
                             await this.page.keyboard.up('Control');
+                            await this.page.keyboard.press('Delete'); // Delete selected content
+                            await this.page.evaluate((selector) => {
+                                const field = document.querySelector(selector);
+                                if (field) field.value = ''; // Clear programmatically
+                            }, passwordSelector);
+                            await this.safeTimeout(100);
+                            
+                            console.log('🔐 Typing password from scratch...');
                             await this.page.type(passwordSelector, password, { delay: 18 });
                             
                             // Click login button
