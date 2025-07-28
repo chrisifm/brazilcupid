@@ -310,77 +310,41 @@ class WebScraper {
             // Take screenshot before clicking hearts
             await this.screenshot('before-hearts.png');
             
-            // Find all heart containers - deactivated ones have data-showinterest with a URL
-            const deactivatedHeartSelector = 'div.pointer.me3.relative.fill-action-unhighlight:not(.fill-action-highlight) [data-showinterest]:not([data-showinterest=""])';
-            
             // Wait for hearts to be present
             await this.page.waitForSelector('div.pointer.me3.relative', { timeout: 10000 });
             
-            // Get all deactivated hearts
+            // Universal selector: Any element with data-showinterest containing a URL (deactivated hearts)
+            const deactivatedHeartSelector = '[data-showinterest*="/es/memberrelationship/showInterest/"]';
             const deactivatedHearts = await this.page.$$(deactivatedHeartSelector);
             console.log(`🔍 Found ${deactivatedHearts.length} deactivated hearts`);
             
             let heartsClicked = 0;
             let lastClickTime = Date.now();
             
-            if (deactivatedHearts.length === 0) {
-                // Alternative approach - look for hearts with data-showinterest containing a URL
-                const alternativeSelector = '[data-showinterest*="/es/memberrelationship/showInterest/"]';
-                const alternativeHearts = await this.page.$$(alternativeSelector);
-                console.log(`🔍 Found ${alternativeHearts.length} hearts with alternative selector`);
-                
-                // Click on alternative hearts
-                for (let i = 0; i < alternativeHearts.length; i++) {
-                    try {
-                        const currentTime = Date.now();
-                        const timeSinceLastClick = heartsClicked > 0 ? ((currentTime - lastClickTime) / 1000).toFixed(1) : 0;
-                        
-                        if (heartsClicked > 0) {
-                            console.log(`Clicking heart ${i + 1}/${alternativeHearts.length} - ${timeSinceLastClick} seg`);
-                        } else {
-                            console.log(`Clicking heart ${i + 1}/${alternativeHearts.length}`);
-                        }
-                        
-                        await alternativeHearts[i].click();
-                        heartsClicked++;
-                        lastClickTime = Date.now();
-                        
-                        // Quick modal close attempt (no waiting)
-                        this.closeModalIfOpen(); // No await - fire and forget
-                        
-                        // Very short delay between clicks
-                        await this.safeTimeout(100 + Math.random() * 200);
-                        
-                    } catch (error) {
-                        console.log(`Failed to click heart ${i + 1}:`, error.message);
+            // Click on all deactivated hearts found
+            for (let i = 0; i < deactivatedHearts.length; i++) {
+                try {
+                    const currentTime = Date.now();
+                    const timeSinceLastClick = heartsClicked > 0 ? ((currentTime - lastClickTime) / 1000).toFixed(1) : 0;
+                    
+                    if (heartsClicked > 0) {
+                        console.log(`Clicking heart ${i + 1}/${deactivatedHearts.length} - ${timeSinceLastClick} seg`);
+                    } else {
+                        console.log(`Clicking heart ${i + 1}/${deactivatedHearts.length}`);
                     }
-                }
-            } else {
-                // Click on each deactivated heart
-                for (let i = 0; i < deactivatedHearts.length; i++) {
-                    try {
-                        const currentTime = Date.now();
-                        const timeSinceLastClick = heartsClicked > 0 ? ((currentTime - lastClickTime) / 1000).toFixed(1) : 0;
-                        
-                        if (heartsClicked > 0) {
-                            console.log(`Clicking deactivated heart ${i + 1}/${deactivatedHearts.length} - ${timeSinceLastClick} seg`);
-                        } else {
-                            console.log(`Clicking deactivated heart ${i + 1}/${deactivatedHearts.length}`);
-                        }
-                        
-                        await deactivatedHearts[i].click();
-                        heartsClicked++;
-                        lastClickTime = Date.now();
-                        
-                        // Quick modal close attempt (no waiting)
-                        this.closeModalIfOpen(); // No await - fire and forget
-                        
-                        // Very short delay between clicks
-                        await this.safeTimeout(100 + Math.random() * 200);
-                        
-                    } catch (error) {
-                        console.log(`Failed to click heart ${i + 1}:`, error.message);
-                    }
+                    
+                    await deactivatedHearts[i].click();
+                    heartsClicked++;
+                    lastClickTime = Date.now();
+                    
+                    // Quick modal close attempt (no waiting)
+                    this.closeModalIfOpen(); // No await - fire and forget
+                    
+                    // Very short delay between clicks
+                    await this.safeTimeout(100 + Math.random() * 200);
+                    
+                } catch (error) {
+                    console.log(`Failed to click heart ${i + 1}:`, error.message);
                 }
             }
             
