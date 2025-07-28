@@ -209,23 +209,19 @@ class WebScraper {
     }
 
 
-    // Method to read initial URL from initial.txt (priority over search.txt)
+    // Method to read initial URL from initial.txt (MANDATORY)
     async readInitialFromFile() {
         try {
             const initialContent = await fs.readFile('initial.txt', 'utf8');
             const initialUrl = initialContent.trim();
             if (!initialUrl) {
-                return null;
+                throw new Error('initial.txt is empty - URL is required');
             }
-            // Check if it's a newmember URL
-            if (initialUrl.includes('newmember')) {
-                console.log(`🎯 Found initial URL: ${initialUrl}`);
-                return initialUrl;
-            }
-            return null;
+            console.log(`🎯 Using primary URL from initial.txt: ${initialUrl}`);
+            return initialUrl;
         } catch (error) {
-            // File doesn't exist or can't be read - not an error
-            return null;
+            console.error('❌ Error reading initial.txt:', error.message);
+            throw new Error('initial.txt file is required and must contain a valid URL');
         }
     }
 
@@ -518,21 +514,11 @@ class WebScraper {
                 }
             }
             
-            // Step 4: Check initial.txt first, then search.txt
-            console.log('Step 4: Checking for initial URL...');
-            const initialUrl = await this.readInitialFromFile();
+            // Step 4: Always use initial.txt as primary URL
+            console.log('Step 4: Reading primary URL from initial.txt...');
+            const targetUrl = await this.readInitialFromFile();
             
-            let targetUrl;
-            if (initialUrl) {
-                console.log('🎯 Using initial URL from initial.txt');
-                targetUrl = initialUrl;
-            } else {
-                console.log('📋 No initial.txt found, using search.txt');
-                const searchQuery = await this.readSearchFromFile();
-                targetUrl = `https://www.brazilcupid.com/es/results/${searchQuery}`;
-            }
-            
-            console.log(`🚀 Navigating to: ${targetUrl}`);
+            console.log(`🚀 Navigating to primary URL: ${targetUrl}`);
             await this.navigateTo(targetUrl);
             
             // Step 5: Cyclic heart clicking with pagination
@@ -571,14 +557,15 @@ class WebScraper {
                             continue;
                         }
                     } else {
-                        console.log('🆕 No more pages available - switching to newmember');
+                        console.log('🆕 No more pages available - restarting from initial URL');
                         
-                        console.log('🚀 Navigating to newmember section...');
-                        await this.navigateTo('https://www.brazilcupid.com/es/results/newmember?searchtype=1');
+                        console.log('🚀 Navigating back to initial URL...');
+                        const initialUrl = await this.readInitialFromFile();
+                        await this.navigateTo(initialUrl);
                         await this.safeTimeout(3000); // Wait for page load
                         consecutiveLoops = 0;
                         
-                        console.log('♾️ Restarting heart clicking cycle from newmember...');
+                        console.log('♾️ Restarting heart clicking cycle from initial URL...');
                         continue; // Continue the infinite loop
                     }
                 } else {
