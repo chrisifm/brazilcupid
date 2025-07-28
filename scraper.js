@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 
 // Configuration variable for headless mode
-const headlessMode = true; // Set to false to show browser window
+const headlessMode = false; // Set to false to show browser window
 
 class WebScraper {
     constructor() {
@@ -505,9 +505,23 @@ class WebScraper {
             console.log(`🚀 Navigating to primary URL: ${targetUrl}`);
             await this.navigateTo(targetUrl);
             
-            // Step 5: Cyclic heart clicking with pagination
-            console.log('Step 5: Starting cyclic heart clicking with pagination...');
-            await this.safeTimeout(3000); // Wait for page stabilization
+            // Step 5: Wait for page to fully load and stabilize after login verification
+            console.log('Step 5: Waiting for page to fully load and complete any verification processes...');
+            await this.safeTimeout(10000); // Extended wait for page stabilization after login
+            
+            // Check if page has redirected or changed
+            const currentUrl = this.page.url();
+            console.log(`🔍 Current page after wait: ${currentUrl}`);
+            
+            // If page changed, navigate back to target URL
+            if (!currentUrl.includes('results')) {
+                console.log('🔄 Page redirected, navigating back to target URL...');
+                await this.navigateTo(targetUrl);
+                await this.safeTimeout(5000);
+            }
+            
+            console.log('Step 6: Starting cyclic heart clicking with pagination...');
+            await this.safeTimeout(3000); // Additional wait for page stabilization
             
             let totalHeartsClicked = 0;
             let consecutiveLoops = 0;
@@ -560,11 +574,6 @@ class WebScraper {
                 await this.safeTimeout(2000);
             }
             
-            // This should never be reached due to infinite loop
-            console.log(`\n=== Infinite cycle running ===`);
-            console.log(`Total hearts clicked in this session: ${totalHeartsClicked}`);
-            
-            console.log('BrazilCupid workflow completed successfully');
             
         } catch (error) {
             console.error('Error in BrazilCupid workflow:', error);
