@@ -8,11 +8,21 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch: # Permite ejecutar manualmente desde GitHub UI
 
+# Cancel previous runs when new one starts
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   scraper:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Cancel Previous Runs
+      uses: styfle/cancel-workflow-action@0.12.1
+      with:
+        access_token: ${{ github.token }}
+        
     - name: Checkout repository
       uses: actions/checkout@v4
       
