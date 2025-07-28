@@ -313,10 +313,24 @@ class WebScraper {
             // Wait for hearts to be present
             await this.page.waitForSelector('div.pointer.me3.relative', { timeout: 10000 });
             
-            // Universal selector: Any element with data-showinterest containing a URL (deactivated hearts)
-            const deactivatedHeartSelector = '[data-showinterest*="/es/memberrelationship/showInterest/"]';
+            // Selector: Find div elements with data-showinterest containing showInterest URL (deactivated hearts)
+            const deactivatedHeartSelector = 'div[data-showinterest*="/es/memberrelationship/showInterest/"]';
             const deactivatedHearts = await this.page.$$(deactivatedHeartSelector);
             console.log(`🔍 Found ${deactivatedHearts.length} deactivated hearts`);
+            
+            // Debug: Log found elements for troubleshooting
+            if (deactivatedHearts.length === 0) {
+                console.log('🔍 No hearts found with main selector, checking page structure...');
+                const allDataShowinterest = await this.page.$$('[data-showinterest]');
+                console.log(`🔍 Found ${allDataShowinterest.length} elements with data-showinterest attribute`);
+                
+                // Check what data-showinterest values exist
+                const dataValues = await this.page.evaluate(() => {
+                    const elements = document.querySelectorAll('[data-showinterest]');
+                    return Array.from(elements).map(el => el.getAttribute('data-showinterest')).slice(0, 5);
+                });
+                console.log('🔍 Sample data-showinterest values:', dataValues);
+            }
             
             let heartsClicked = 0;
             let lastClickTime = Date.now();
