@@ -498,28 +498,34 @@ class WebScraper {
                 }
             }
             
-            // Step 4: Check if we're on the waiting/redirect page after login
+            // Step 4: Check if we're on logon_do page and wait for it to change
             console.log('Step 4: Checking post-login page status...');
-            const postLoginUrl = this.page.url();
-            console.log(`🔍 Post-login URL: ${postLoginUrl}`);
+            let currentUrl = this.page.url();
+            console.log(`🔍 Post-login URL: ${currentUrl}`);
             
-            // If we're on a waiting/redirect page (like logon_do.cfm), wait for auto-redirect
-            if (postLoginUrl.includes('logon_do.cfm') || postLoginUrl.includes('wait') || postLoginUrl.includes('redirect')) {
-                console.log('⏳ Detected waiting/redirect page - waiting for automatic redirect...');
+            // If we're on logon_do page, just wait until it changes automatically
+            if (currentUrl.includes('logon_do')) {
+                console.log('⏳ Detected logon_do page - waiting for automatic page change...');
                 
-                // Wait for navigation to complete (auto-redirect)
-                try {
-                    await this.page.waitForNavigation({ 
-                        waitUntil: 'domcontentloaded', 
-                        timeout: 30000 
-                    });
-                    console.log(`✅ Auto-redirect completed to: ${this.page.url()}`);
-                } catch (error) {
-                    console.log(`⚠️ Auto-redirect timeout, proceeding manually: ${error.message}`);
+                // Wait until URL no longer contains logon_do
+                let attempts = 0;
+                const maxAttempts = 60; // Wait up to 60 seconds
+                
+                while (currentUrl.includes('logon_do') && attempts < maxAttempts) {
+                    await this.safeTimeout(1000); // Check every second
+                    currentUrl = this.page.url();
+                    attempts++;
+                    
+                    if (attempts % 10 === 0) {
+                        console.log(`⏳ Still on logon_do page... waiting (${attempts}s)`);
+                    }
                 }
                 
-                // Additional wait for page stabilization
-                await this.safeTimeout(5000);
+                if (currentUrl.includes('logon_do')) {
+                    console.log('⚠️ Still on logon_do page after 60 seconds, proceeding anyway...');
+                } else {
+                    console.log(`✅ Page changed! New URL: ${currentUrl}`);
+                }
             }
             
             // Step 5: Navigate to target URL from initial.txt
@@ -531,7 +537,7 @@ class WebScraper {
             
             // Wait for page to fully load
             console.log('⏳ Waiting for page to fully load...');
-            await this.safeTimeout(5000);
+            await this.safeTimeout(3000);
             
             console.log('Step 6: Starting cyclic heart clicking with pagination...');
             await this.safeTimeout(3000); // Additional wait for page stabilization
