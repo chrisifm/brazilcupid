@@ -310,26 +310,47 @@ class WebScraper {
             // Take screenshot before clicking hearts
             await this.screenshot('before-hearts.png');
             
-            // Wait for hearts to be present
-            await this.page.waitForSelector('div.pointer.me3.relative', { timeout: 10000 });
+            // First, let's check what's actually on the page
+            console.log('🔍 Checking page structure...');
             
-            // Selector: Find div elements with data-showinterest containing showInterest URL (deactivated hearts)
-            const deactivatedHeartSelector = 'div[data-showinterest*="/es/memberrelationship/showInterest/"]';
-            const deactivatedHearts = await this.page.$$(deactivatedHeartSelector);
-            console.log(`🔍 Found ${deactivatedHearts.length} deactivated hearts`);
+            // Check for various heart-related selectors
+            const heartContainers = await this.page.$$('div.pointer.me3.relative');
+            console.log(`🔍 Found ${heartContainers.length} heart containers (div.pointer.me3.relative)`);
             
-            // Debug: Log found elements for troubleshooting
-            if (deactivatedHearts.length === 0) {
-                console.log('🔍 No hearts found with main selector, checking page structure...');
-                const allDataShowinterest = await this.page.$$('[data-showinterest]');
-                console.log(`🔍 Found ${allDataShowinterest.length} elements with data-showinterest attribute`);
-                
+            const allDataShowinterest = await this.page.$$('[data-showinterest]');
+            console.log(`🔍 Found ${allDataShowinterest.length} elements with data-showinterest attribute`);
+            
+            const heartIcons = await this.page.$$('svg use[xlink\\:href*="icon-heart"]');
+            console.log(`🔍 Found ${heartIcons.length} heart SVG icons`);
+            
+            // Check page content to understand structure
+            const pageInfo = await this.page.evaluate(() => {
+                return {
+                    title: document.title,
+                    bodyClasses: document.body.className,
+                    hasProfiles: document.querySelectorAll('[class*="profile"], [class*="member"]').length,
+                    totalDivs: document.querySelectorAll('div').length
+                };
+            });
+            console.log('🔍 Page info:', pageInfo);
+            
+            // Try to find deactivated hearts without waiting for specific selector
+            let deactivatedHearts = [];
+            
+            if (allDataShowinterest.length > 0) {
                 // Check what data-showinterest values exist
                 const dataValues = await this.page.evaluate(() => {
                     const elements = document.querySelectorAll('[data-showinterest]');
-                    return Array.from(elements).map(el => el.getAttribute('data-showinterest')).slice(0, 5);
+                    return Array.from(elements).map(el => el.getAttribute('data-showinterest')).slice(0, 10);
                 });
                 console.log('🔍 Sample data-showinterest values:', dataValues);
+                
+                // Find deactivated hearts (those with showInterest URLs)
+                const deactivatedHeartSelector = 'div[data-showinterest*="/es/memberrelationship/showInterest/"]';
+                deactivatedHearts = await this.page.$$(deactivatedHeartSelector);
+                console.log(`🔍 Found ${deactivatedHearts.length} deactivated hearts with main selector`);
+            } else {
+                console.log('⚠️ No elements with data-showinterest found - page may have different structure');
             }
             
             let heartsClicked = 0;
