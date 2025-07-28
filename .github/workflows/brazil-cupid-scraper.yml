@@ -8,9 +8,9 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch: # Permite ejecutar manualmente desde GitHub UI
 
-# Cancel previous runs when new one starts
+# Cancel ALL previous runs - only ONE execution allowed at any time
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: brazil-cupid-scraper-global
   cancel-in-progress: true
 
 jobs:
