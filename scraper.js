@@ -512,7 +512,7 @@ class WebScraper {
                 const maxAttempts = 60; // Wait up to 60 seconds
                 
                 while (currentUrl.includes('logon_do') && attempts < maxAttempts) {
-                    await this.safeTimeout(1000); // Check every second
+                    await this.safeTimeout(10000); // Check every second
                     currentUrl = this.page.url();
                     attempts++;
                     
@@ -531,6 +531,61 @@ class WebScraper {
                     // Check final URL after stabilization
                     const finalUrl = this.page.url();
                     console.log(`🔍 Final URL after stabilization: ${finalUrl}`);
+                    
+                    // If we're back at login page, restart login process
+                    if (finalUrl.includes('auth/login')) {
+                        console.log('🔄 Detected return to login page - restarting login process...');
+                        
+                        // Re-enter credentials
+                        const emailSelector = 'input[name="email"], input[type="email"]';
+                        const passwordSelector = 'input[name="password"], input[type="password"]';
+                        
+                        const email = process.env.BRAZIL_CUPID_EMAIL;
+                        const password = process.env.BRAZIL_CUPID_PASSWORD;
+                        
+                        if (!email || !password) {
+                            throw new Error('BRAZIL_CUPID_EMAIL and BRAZIL_CUPID_PASSWORD environment variables are required');
+                        }
+                        
+                        try {
+                            // Wait for login form
+                            await this.waitForSelector(emailSelector, 10000);
+                            await this.waitForSelector(passwordSelector, 10000);
+                            
+                            // Clear and re-enter credentials
+                            await this.page.focus(emailSelector);
+                            await this.page.keyboard.down('Control');
+                            await this.page.keyboard.press('a');
+                            await this.page.keyboard.up('Control');
+                            await this.page.type(emailSelector, email, { delay: 15 });
+                            
+                            await this.safeTimeout(250);
+                            await this.page.focus(passwordSelector);
+                            await this.page.keyboard.down('Control');
+                            await this.page.keyboard.press('a');
+                            await this.page.keyboard.up('Control');
+                            await this.page.type(passwordSelector, password, { delay: 18 });
+                            
+                            // Click login button
+                            const loginButtonSelector = 'button[type="submit"], input[type="submit"], .btn-login, .login-btn, [value="Ingresar"]';
+                            await this.click(loginButtonSelector);
+                            console.log('🔄 Re-login attempt completed');
+                            
+                            // Wait for login processing
+                            await this.safeTimeout(5000);
+                            
+                            // Recursively check for logon_do again
+                            const newUrl = this.page.url();
+                            if (newUrl.includes('logon_do')) {
+                                console.log('🔄 Back to logon_do after re-login, waiting again...');
+                                // This will trigger the logon_do waiting logic again
+                                currentUrl = newUrl;
+                            }
+                            
+                        } catch (error) {
+                            console.error('❌ Error during re-login:', error.message);
+                        }
+                    }
                 }
             }
             
