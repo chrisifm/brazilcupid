@@ -1,0 +1,3202 @@
+[
+  {
+    "id": 1,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 2,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 3,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 4,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 5,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 6,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 7,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 8,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 9,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 10,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 11,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 12,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 13,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 14,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 15,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 16,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 17,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 18,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 19,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 20,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  },
+  {
+    "id": 21,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 22,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 23,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 24,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 25,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 26,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 27,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 28,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 29,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 30,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 31,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 32,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 33,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 34,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 35,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 36,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 37,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 38,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 39,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 40,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  },
+  {
+    "id": 41,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 42,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 43,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 44,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 45,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 46,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 47,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 48,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 49,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 50,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 51,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 52,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 53,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 54,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 55,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 56,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 57,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 58,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 59,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 60,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  },
+  {
+    "id": 61,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 62,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 63,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 64,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 65,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 66,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 67,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 68,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 69,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 70,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 71,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 72,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 73,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 74,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 75,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 76,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 77,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 78,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 79,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 80,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  },
+  {
+    "id": 81,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 82,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 83,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 84,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 85,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 86,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 87,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 88,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 89,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 90,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 91,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 92,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 93,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 94,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 95,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 96,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 97,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 98,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 99,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 100,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  },
+  {
+    "id": 101,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 102,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 103,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 104,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 105,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 106,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 107,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 108,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 109,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 110,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 111,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 112,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 113,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 114,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 115,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 116,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 117,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 118,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 119,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 120,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  },
+  {
+    "id": 121,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 122,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 123,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 124,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 125,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 126,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 127,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 128,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 129,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 130,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 131,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 132,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 133,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 134,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 135,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 136,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 137,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 138,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 139,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 140,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  },
+  {
+    "id": 141,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 142,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 143,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 144,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 145,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 146,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 147,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 148,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 149,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 150,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 151,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 152,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 153,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 154,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 155,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 156,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 157,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 158,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 159,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 160,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  },
+  {
+    "id": 161,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 162,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 163,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 164,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 165,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 166,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 167,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 168,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 169,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 170,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 171,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 172,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 173,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 174,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 175,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 176,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 177,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 178,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 179,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 180,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  },
+  {
+    "id": 181,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-ES,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Madrid, Spain",
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": 182,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-MX,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Guadalajara, Mexico",
+    "coordinates": {
+      "latitude": 20.6597,
+      "longitude": -103.3496
+    },
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "id": 183,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-AR,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Rosario, Argentina",
+    "coordinates": {
+      "latitude": -32.9442,
+      "longitude": -60.6505
+    },
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": 184,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-CO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Barranquilla, Colombia",
+    "coordinates": {
+      "latitude": 10.9685,
+      "longitude": -74.7813
+    },
+    "timezone": "America/Bogota"
+  },
+  {
+    "id": 185,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-PE,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Huancayo, Peru",
+    "coordinates": {
+      "latitude": -12.0653,
+      "longitude": -75.2049
+    },
+    "timezone": "America/Lima"
+  },
+  {
+    "id": 186,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-CL,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Santiago, Chile",
+    "coordinates": {
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "timezone": "America/Santiago"
+  },
+  {
+    "id": 187,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-VE,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Maracaibo, Venezuela",
+    "coordinates": {
+      "latitude": 10.6667,
+      "longitude": -71.6333
+    },
+    "timezone": "America/Caracas"
+  },
+  {
+    "id": 188,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-EC,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Cuenca, Ecuador",
+    "coordinates": {
+      "latitude": -2.9001,
+      "longitude": -79.0059
+    },
+    "timezone": "America/Guayaquil"
+  },
+  {
+    "id": 189,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "language": "es-BO,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Sucre, Bolivia",
+    "coordinates": {
+      "latitude": -19.0196,
+      "longitude": -65.2619
+    },
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": 190,
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "language": "es-PY,es;q=0.9,en;q=0.8",
+    "platform": "Linux",
+    "location": "Fernando de la Mora, Paraguay",
+    "coordinates": {
+      "latitude": -25.319,
+      "longitude": -57.5205
+    },
+    "timezone": "America/Asuncion"
+  },
+  {
+    "id": 191,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "language": "es-UY,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Montevideo, Uruguay",
+    "coordinates": {
+      "latitude": -34.9011,
+      "longitude": -56.1645
+    },
+    "timezone": "America/Montevideo"
+  },
+  {
+    "id": 192,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+    "viewport": {
+      "width": 1152,
+      "height": 864
+    },
+    "language": "es-GT,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Mixco, Guatemala",
+    "coordinates": {
+      "latitude": 14.6308,
+      "longitude": -90.6067
+    },
+    "timezone": "America/Guatemala"
+  },
+  {
+    "id": 193,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "language": "es-HN,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Choloma, Honduras",
+    "coordinates": {
+      "latitude": 15.6167,
+      "longitude": -87.95
+    },
+    "timezone": "America/Tegucigalpa"
+  },
+  {
+    "id": 194,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "language": "es-SV,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San Miguel, El Salvador",
+    "coordinates": {
+      "latitude": 13.4833,
+      "longitude": -88.1833
+    },
+    "timezone": "America/El_Salvador"
+  },
+  {
+    "id": 195,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "language": "es-NI,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "Chinandega, Nicaragua",
+    "coordinates": {
+      "latitude": 12.6167,
+      "longitude": -87.1333
+    },
+    "timezone": "America/Managua"
+  },
+  {
+    "id": 196,
+    "userAgent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 864
+    },
+    "language": "es-CR,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San José, Costa Rica",
+    "coordinates": {
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "timezone": "America/Costa_Rica"
+  },
+  {
+    "id": 197,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "language": "es-PA,es;q=0.9,en;q=0.8",
+    "platform": "Windows",
+    "location": "San Miguelito, Panama",
+    "coordinates": {
+      "latitude": 9.0333,
+      "longitude": -79.4667
+    },
+    "timezone": "America/Panama"
+  },
+  {
+    "id": 198,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "language": "es-DO,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "La Romana, Dominican Republic",
+    "coordinates": {
+      "latitude": 18.4273,
+      "longitude": -68.9728
+    },
+    "timezone": "America/Santo_Domingo"
+  },
+  {
+    "id": 199,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1680,
+      "height": 1050
+    },
+    "language": "es-CU,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Holguín, Cuba",
+    "coordinates": {
+      "latitude": 20.8833,
+      "longitude": -76.2667
+    },
+    "timezone": "America/Havana"
+  },
+  {
+    "id": 200,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "language": "es-PR,es;q=0.9,en;q=0.8",
+    "platform": "macOS",
+    "location": "Caguas, Puerto Rico",
+    "coordinates": {
+      "latitude": 18.2342,
+      "longitude": -66.0356
+    },
+    "timezone": "America/Puerto_Rico"
+  }
+]

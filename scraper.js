@@ -14,55 +14,42 @@ class WebScraper {
         this.activeTimeouts = new Set();
     }
 
-    // Method to get random client configuration
-    getRandomClientConfig() {
-        const configs = [
-            {
+    // Method to get client configuration from file
+    async getClientConfig() {
+        try {
+            const configData = await fs.readFile('client-configs.json', 'utf8');
+            const configs = JSON.parse(configData);
+            
+            // Use timestamp to ensure different config each run
+            const timestamp = Date.now();
+            const configIndex = timestamp % configs.length;
+            const config = configs[configIndex];
+            
+            console.log(`🌍 Using client config #${config.id}: ${config.platform} from ${config.location}`);
+            console.log(`🔧 User-Agent: ${config.userAgent.split(' ')[0]}...`);
+            console.log(`📱 Viewport: ${config.viewport.width}x${config.viewport.height}`);
+            console.log(`🌐 Language: ${config.language.split(',')[0]}`);
+            
+            return config;
+        } catch (error) {
+            console.error('❌ Error reading client configs:', error.message);
+            // Fallback to basic config
+            return {
+                id: 1,
                 userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                 viewport: { width: 1920, height: 1080 },
-                language: 'es-ES,es;q=0.9',
+                language: 'es-ES,es;q=0.9,en;q=0.8',
                 platform: 'Windows',
-                location: 'Madrid, Spain'
-            },
-            {
-                userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                viewport: { width: 1440, height: 900 },
-                language: 'es-MX,es;q=0.9',
-                platform: 'macOS',
-                location: 'Mexico City, Mexico'
-            },
-            {
-                userAgent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                viewport: { width: 1366, height: 768 },
-                language: 'es-AR,es;q=0.9',
-                platform: 'Linux',
-                location: 'Buenos Aires, Argentina'
-            },
-            {
-                userAgent: 'Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                viewport: { width: 1536, height: 864 },
-                language: 'es-CO,es;q=0.9',
-                platform: 'Windows',
-                location: 'Bogotá, Colombia'
-            },
-            {
-                userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-                viewport: { width: 1280, height: 720 },
-                language: 'es-PE,es;q=0.9',
-                platform: 'macOS',
-                location: 'Lima, Peru'
-            }
-        ];
-        
-        const randomIndex = Math.floor(Math.random() * configs.length);
-        const config = configs[randomIndex];
-        console.log(`🌍 Using client config: ${config.platform} from ${config.location}`);
-        return config;
+                location: 'Madrid, Spain',
+                coordinates: { latitude: 40.4168, longitude: -3.7038 },
+                timezone: 'Europe/Madrid'
+            };
+        }
     }
 
     async init(options = {}) {
-        // Get random client configuration and fingerprint
-        const clientConfig = this.getRandomClientConfig();
+        // Get client configuration from file and fingerprint
+        const clientConfig = await this.getClientConfig();
         const clientFingerprint = this.generateClientFingerprint();
         
         const defaultOptions = {
@@ -169,23 +156,11 @@ class WebScraper {
         await this.page.setExtraHTTPHeaders(platformHeaders);
         
         // Set geolocation override to match the client location
-        await this.page.setGeolocation(this.getGeolocationForLocation(clientConfig.location));
+        await this.page.setGeolocation(clientConfig.coordinates);
         
         console.log(`🔧 Configured as ${clientConfig.userAgent.split(' ')[0]} browser from ${clientConfig.location}`);
     }
 
-    // Method to get geolocation coordinates for different locations
-    getGeolocationForLocation(location) {
-        const coordinates = {
-            'Madrid, Spain': { latitude: 40.4168, longitude: -3.7038 },
-            'Mexico City, Mexico': { latitude: 19.4326, longitude: -99.1332 },
-            'Buenos Aires, Argentina': { latitude: -34.6118, longitude: -58.3960 },
-            'Bogotá, Colombia': { latitude: 4.7110, longitude: -74.0721 },
-            'Lima, Peru': { latitude: -12.0464, longitude: -77.0428 }
-        };
-        
-        return coordinates[location] || { latitude: 40.4168, longitude: -3.7038 };
-    }
 
     // Method to generate random client fingerprint
     generateClientFingerprint() {
