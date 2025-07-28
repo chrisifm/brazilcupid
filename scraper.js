@@ -209,6 +209,26 @@ class WebScraper {
     }
 
 
+    // Method to read initial URL from initial.txt (priority over search.txt)
+    async readInitialFromFile() {
+        try {
+            const initialContent = await fs.readFile('initial.txt', 'utf8');
+            const initialUrl = initialContent.trim();
+            if (!initialUrl) {
+                return null;
+            }
+            // Check if it's a newmember URL
+            if (initialUrl.includes('newmember')) {
+                console.log(`🎯 Found initial URL: ${initialUrl}`);
+                return initialUrl;
+            }
+            return null;
+        } catch (error) {
+            // File doesn't exist or can't be read - not an error
+            return null;
+        }
+    }
+
     // Method to read search parameters from search.txt
     async readSearchFromFile() {
         try {
@@ -217,7 +237,7 @@ class WebScraper {
             if (!searchQuery) {
                 throw new Error('Empty search.txt file');
             }
-            console.log(`Found search parameters: ${searchQuery}`);
+            console.log(`🔍 Found search parameters: ${searchQuery}`);
             return searchQuery;
         } catch (error) {
             console.error('Error reading search.txt:', error.message);
@@ -498,13 +518,22 @@ class WebScraper {
                 }
             }
             
-            // Step 4: Read search parameters and navigate
-            console.log('Step 4: Reading search parameters...');
-            const searchQuery = await this.readSearchFromFile();
-            const searchUrl = `https://www.brazilcupid.com/es/results/${searchQuery}`;
+            // Step 4: Check initial.txt first, then search.txt
+            console.log('Step 4: Checking for initial URL...');
+            const initialUrl = await this.readInitialFromFile();
             
-            console.log(`Navigating to search: ${searchUrl}`);
-            await this.navigateTo(searchUrl);
+            let targetUrl;
+            if (initialUrl) {
+                console.log('🎯 Using initial URL from initial.txt');
+                targetUrl = initialUrl;
+            } else {
+                console.log('📋 No initial.txt found, using search.txt');
+                const searchQuery = await this.readSearchFromFile();
+                targetUrl = `https://www.brazilcupid.com/es/results/${searchQuery}`;
+            }
+            
+            console.log(`🚀 Navigating to: ${targetUrl}`);
+            await this.navigateTo(targetUrl);
             
             // Step 5: Cyclic heart clicking with pagination
             console.log('Step 5: Starting cyclic heart clicking with pagination...');
