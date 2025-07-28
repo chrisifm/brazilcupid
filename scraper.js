@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 
 // Configuration variable for headless mode
-const headlessMode = false; // Set to false to show browser window
+const headlessMode = true; // Set to false to show browser window
 
 class WebScraper {
     constructor() {
