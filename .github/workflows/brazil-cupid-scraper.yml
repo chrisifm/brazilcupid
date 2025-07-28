@@ -1,0 +1,70 @@
+name: Brazil Cupid Scraper
+
+on:
+  schedule:
+    # Ejecutar cada hora (minuto 0 de cada hora)
+    - cron: '0 * * * *'
+  workflow_dispatch: # Permite ejecutar manualmente desde GitHub UI
+
+jobs:
+  scraper:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Install system dependencies for Puppeteer
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          libnss3-dev \
+          libgconf-2-4 \
+          libxss1 \
+          libasound2 \
+          libxtst6 \
+          libxrandr2 \
+          libasound2 \
+          libpangocairo-1.0-0 \
+          libatk1.0-0 \
+          libcairo-gobject2 \
+          libgtk-3-0 \
+          libgdk-pixbuf2.0-0
+          
+    - name: Create screens directory
+      run: mkdir -p screens
+      
+    - name: Run Brazil Cupid Scraper
+      run: timeout 25m node scraper.js || echo "Scraper completed or timed out"
+      timeout-minutes: 30
+      continue-on-error: true
+      env:
+        BRAZIL_CUPID_EMAIL: ${{ secrets.BRAZIL_CUPID_EMAIL }}
+        BRAZIL_CUPID_PASSWORD: ${{ secrets.BRAZIL_CUPID_PASSWORD }}
+      
+    - name: Upload screenshots as artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: scraper-screenshots-${{ github.run_number }}
+        path: screens/
+        retention-days: 7
+        
+    - name: Upload logs as artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: scraper-logs-${{ github.run_number }}
+        path: |
+          *.log
+          *.txt
+        retention-days: 7

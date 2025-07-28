@@ -1,0 +1,4 @@
+node_modules
+.claude-cache
+.claude
+instructions.md
