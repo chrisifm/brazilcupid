@@ -18,6 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Send Start Notification
+      run: |
+        echo "📱 Sending start notification to Pushcut..."
+        curl -X POST "https://api.pushcut.io/eOU0kCDr2y95dXanO0nwk/notifications/Brazil%20GitHub%20" || echo "⚠️ Notification failed but continuing..."
+        echo "✅ Notification sent successfully"
+        
     - name: Cancel Previous Runs
       uses: styfle/cancel-workflow-action@0.12.1
       with:
