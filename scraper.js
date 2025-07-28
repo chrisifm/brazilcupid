@@ -151,7 +151,14 @@ class WebScraper {
         
         const fullPath = `${screensDir}/${filename}`;
         await this.page.screenshot({ path: fullPath, fullPage: true });
-        console.log(`Screenshot saved: ${fullPath}`);
+        console.log(`📸 Screenshot saved: ${fullPath}`);
+        
+        // Log artifact URL for GitHub Actions
+        if (process.env.GITHUB_RUN_NUMBER) {
+            const repoUrl = process.env.GITHUB_SERVER_URL + '/' + process.env.GITHUB_REPOSITORY;
+            const artifactUrl = `${repoUrl}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            console.log(`🔗 View screenshots at: ${artifactUrl}`);
+        }
     }
 
     async extractData(selector, attribute = 'textContent') {
@@ -297,7 +304,7 @@ class WebScraper {
     async clickDeactivatedHearts() {
         
         try {
-            console.log('Looking for deactivated hearts...');
+            console.log('💖 Looking for deactivated hearts...');
             
             // Take screenshot before clicking hearts
             await this.screenshot('before-hearts.png');
@@ -310,7 +317,7 @@ class WebScraper {
             
             // Get all deactivated hearts
             const deactivatedHearts = await this.page.$$(deactivatedHeartSelector);
-            console.log(`Found ${deactivatedHearts.length} deactivated hearts`);
+            console.log(`🔍 Found ${deactivatedHearts.length} deactivated hearts`);
             
             let heartsClicked = 0;
             let lastClickTime = Date.now();
@@ -319,7 +326,7 @@ class WebScraper {
                 // Alternative approach - look for hearts with data-showinterest containing a URL
                 const alternativeSelector = '[data-showinterest*="/es/memberrelationship/showInterest/"]';
                 const alternativeHearts = await this.page.$$(alternativeSelector);
-                console.log(`Found ${alternativeHearts.length} hearts with alternative selector`);
+                console.log(`🔍 Found ${alternativeHearts.length} hearts with alternative selector`);
                 
                 // Click on alternative hearts
                 for (let i = 0; i < alternativeHearts.length; i++) {
@@ -378,7 +385,7 @@ class WebScraper {
             
             // Take screenshot after clicking hearts
             await this.screenshot('after-hearts.png');
-            console.log(`Finished clicking hearts on this page - clicked ${heartsClicked} hearts`);
+            console.log(`✅ Finished clicking hearts on this page - clicked ${heartsClicked} hearts`);
             
             return heartsClicked;
             
@@ -454,10 +461,10 @@ class WebScraper {
                 
                 // Check if we're still on login page (login failed)
                 const currentUrl = this.page.url();
-                console.log('Current URL after login:', currentUrl);
+                console.log('🔍 Current URL after login:', currentUrl);
                 
                 if (currentUrl.includes('login') || currentUrl.includes('auth')) {
-                    console.log('Still on login page - checking for errors...');
+                    console.log('⚠️  Still on login page - checking for errors...');
                     
                     // Look for error messages
                     const errorElements = await this.page.$$('.error, .alert, .warning, [class*="error"]');
@@ -466,14 +473,14 @@ class WebScraper {
                             const errors = document.querySelectorAll('.error, .alert, .warning, [class*="error"]');
                             return Array.from(errors).map(el => el.textContent.trim()).join('; ');
                         });
-                        console.log('Login error found:', errorText);
+                        console.log('❌ Login error found:', errorText);
                     }
                     
                     // Wait a bit more in case it's a slow redirect
-                    console.log('Waiting additional time for potential redirect...');
+                    console.log('⏳ Waiting additional time for potential redirect...');
                     await this.safeTimeout(5000);
                 } else {
-                    console.log('Login successful - navigated to:', currentUrl);
+                    console.log('✅ Login correcto! 🎉 - navigated to:', currentUrl);
                 }
                 
             } catch (error) {
@@ -485,9 +492,9 @@ class WebScraper {
                 
                 // Continue anyway if we're not on login page
                 if (!currentUrl.includes('login') && !currentUrl.includes('auth')) {
-                    console.log('Login was successful (redirected from login page)');
+                    console.log('✅ Login correcto! 🎉 (redirected from login page)');
                 } else {
-                    console.log('Login may have failed - still on login page');
+                    console.log('❌ Login may have failed - still on login page');
                 }
             }
             
@@ -513,8 +520,8 @@ class WebScraper {
                 const heartsClickedOnPage = await this.clickDeactivatedHearts();
                 totalHeartsClicked += heartsClickedOnPage;
                 
-                console.log(`Hearts clicked on this page: ${heartsClickedOnPage}`);
-                console.log(`Total hearts clicked so far: ${totalHeartsClicked}`);
+                console.log(`💖 Hearts clicked on this page: ${heartsClickedOnPage}`);
+                console.log(`📊 Total hearts clicked so far: ${totalHeartsClicked}`);
                 
                 // Try to go to next page
                 console.log('Checking for next page...');
@@ -526,7 +533,7 @@ class WebScraper {
                         console.log(`Page loop detected! Consecutive loops: ${consecutiveLoops}`);
                         
                         if (consecutiveLoops >= 3) {
-                            console.log('Multiple page loops detected - restarting from page 1');
+                            console.log('🔄 Multiple page loops detected - restarting from page 1');
                             const searchQuery = await this.readSearchFromFile();
                             const resetUrl = `https://www.brazilcupid.com/es/results/${searchQuery}`;
                             await this.navigateTo(resetUrl);
@@ -535,14 +542,14 @@ class WebScraper {
                             continue;
                         }
                     } else {
-                        console.log('No more pages available - switching to newmember');
+                        console.log('🆕 No more pages available - switching to newmember');
                         
-                        console.log('Navigating to newmember section...');
+                        console.log('🚀 Navigating to newmember section...');
                         await this.navigateTo('https://www.brazilcupid.com/es/results/newmember?searchtype=1');
                         await this.safeTimeout(3000); // Wait for page load
                         consecutiveLoops = 0;
                         
-                        console.log('Restarting heart clicking cycle from newmember...');
+                        console.log('♾️ Restarting heart clicking cycle from newmember...');
                         continue; // Continue the infinite loop
                     }
                 } else {

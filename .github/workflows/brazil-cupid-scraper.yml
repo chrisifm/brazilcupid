@@ -85,6 +85,19 @@ jobs:
         path: screens/
         retention-days: 7
         
+    - name: Print artifact URLs
+      if: always()
+      run: |
+        echo "📸 Screenshots uploaded as artifacts!"
+        echo "🔗 View artifacts at: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        echo ""
+        echo "📋 Artifact details:"
+        echo "   • Name: scraper-screenshots-${{ github.run_number }}"
+        echo "   • Contents: All screenshots from /screens directory"
+        echo "   • Retention: 7 days"
+        echo ""
+        echo "🖱️ Click the URL above to download screenshots!"
+        
     - name: Upload logs as artifacts
       uses: actions/upload-artifact@v4
       if: always()
